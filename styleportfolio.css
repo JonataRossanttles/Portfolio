@@ -1,0 +1,349 @@
+@charset "utf-8";
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@keyframes slide{
+    from{
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+:root{
+    --font-padrao: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+}
+body{
+    background-color: white;
+    width: 100%;
+    
+}
+
+nav{
+    min-width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.192);
+}
+
+.menu{
+    background-color: rgba(0, 0, 0, 0.486);
+    display: flex;
+    margin: 5px;
+
+   
+}
+.Logo{
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 10px;
+    font-family: var(--fonte-padrao);
+   
+
+}
+.link{
+    font-family: var(--font-padrao);
+    margin: 30px;
+    font-weight: 900;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    
+}
+.link:hover{
+    background-color: white;
+    padding: 5px;
+    margin: 30px;
+    color: black;
+}
+main{
+    
+    display: flex;
+    min-width: 320px;
+    max-width: 1000px;
+        background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    
+    
+}
+
+
+main #p1{
+    font-family: var(--fonte-padrao);
+    font-size: 1.3em; 
+    color: rgba(0, 0, 0, 0.63);
+    font-weight: bold;
+       
+}
+
+main #p2{
+    font-family: arial black;
+    font-size: 2.2em;
+    
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.938);
+       
+}
+main #p3{
+    font-family: var(--font-padrao);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.637);
+    margin-bottom: 20px;
+       
+}
+main img{
+    
+    margin-left: 100px;
+    
+}
+.apresentação{
+    
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transform: translateX(-40px);
+    display: block;
+    margin-top: 150px;
+}
+.redessociais{
+    
+   display: flex;
+   
+    
+}
+.botãolink{
+    margin: 20px;
+       
+}
+.botão{
+    border-radius: 5px;
+    height: 50px;
+    width: 90px;
+    color: black;
+    font-size: 1em;
+    font-family: var(--fonte-padrao);
+    font-weight: 900;
+    border: 1px solid;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    
+}
+.botão:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid;
+    
+}
+
+
+section#quemsoueu{
+    background-color: black;
+    width: 100%;
+}
+.soueu{
+    
+    width: 100%;
+    display: flex;
+    margin: auto;
+    
+}
+.descrição{
+    margin: 50px;
+}
+section h1{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 1.7em;
+    font-family: var(--fonte-padrao);
+    font-weight: 700;
+}
+section p{
+    color: white;
+    line-height: 2em;
+    font-size: 1.1em;
+    font-family: var(--font-padrao);
+    text-align: justify;
+    
+}
+.imagem2{
+    min-width: 100px;
+    max-width: 300px;
+    display: block;
+    margin: 55px 0px 50px 0px;
+    padding-left: 10px;
+    
+}
+
+#containerprojetos{
+    
+    margin-top: 10px;
+    min-width: 320px;
+    max-width: 1100px;
+    background-color: white;
+    margin: auto;  
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.055);
+}
+#containerprojetos h1{
+   padding-top: 10px;
+    margin-bottom: 10px;
+}
+#projetos{
+    display: flex;
+    margin: auto;
+    
+    
+}
+#projetos2{
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+
+.projeto p{
+    text-align: justify;
+    font-weight: 500;
+    font-family:var(--font-padrao)
+    
+}
+div.projeto{
+    align-items: center;
+    display: block;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.247);
+    padding: 20px;
+    margin:50px;
+    
+    max-width: 300px;
+    
+}
+.projeto a, img{
+    max-width: 100%;
+
+}
+.projeto:hover{
+    align-items: center;
+    display: block;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.445);
+    padding: 20px;
+    margin:50px;
+    max-width: 300px;
+
+}
+
+
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+    margin-top: 10px;
+    
+}
+footer p{
+    font-family: var(--font-padrao);
+    
+}
+/* USO DE MEDI QUERY*/
+@media screen and (max-width:777px){
+
+ main{
+     display: block;
+ }
+ main img{
+     display: none;
+ }
+ #projetos{
+     display: block;
+
+ }
+ #projetos2{
+     display: block;
+ }
+ .apresentação{
+     margin-left: 50px;
+
+ }
+ 
+}
+@media screen and (max-width:493px){
+
+.link{
+    margin:2px;
+}
+.logo{
+    margin: 5px;
+}
+
+
+
+
+}
+@media screen and (max-width:400px){
+    
+.apresentação{
+    margin: 100px;
+    text-align: center;
+}
+.redessociais{
+    width: 200px;
+    text-align: center;
+    margin-right: 20px;
+}
+.redessociais a{
+    margin: 10px;
+}
+
+.soueu{
+    display: block;
+    width: 100%;
+}
+.imagem2{
+    padding-top: 10px;
+    margin: auto;
+}
+#quemsoueu{
+    width: 100%;
+}
+.soueu h1{
+    text-align: center;
+}
+#containerprojetos h1{
+    text-align: center;
+}
+
+}
+@media screen and (max-width:320px){
+
+    .redessociais{
+        display: block;
+        
+    }
+    .redessociais button{
+        margin: 20px 40px 20px 0px;
+    }
+    
+}
