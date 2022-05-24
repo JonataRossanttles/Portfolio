@@ -280,6 +280,7 @@ footer p{
      display: block;
 
  }
+ 
  #projetos2{
      display: block;
  }
@@ -296,6 +297,24 @@ footer p{
 }
 .logo{
     margin: 5px;
+}
+.imagem2{
+    padding: 5px;
+    margin: auto;
+}
+.descrição{
+    text-align: center;
+}
+#containerprojetos h1{
+    text-align: center;
+}
+
+.soueu{
+    display: block;
+    width: 100%;
+}
+.projeto{
+    margin: 0;
 }
 
 
@@ -331,9 +350,7 @@ footer p{
 .soueu h1{
     text-align: center;
 }
-#containerprojetos h1{
-    text-align: center;
-}
+
 
 }
 @media screen and (max-width:320px){
