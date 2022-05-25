@@ -135,7 +135,7 @@ main img{
     margin: 20px;
        
 }
-.botão{
+.botãoredes{
     border-radius: 5px;
     height: 50px;
     width: 90px;
@@ -147,7 +147,7 @@ main img{
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
     
 }
-.botão:hover{
+.botãoredes:hover{
     background-color: black;
     color: white;
     border-radius: 5px;
@@ -224,7 +224,8 @@ section p{
 .projeto p{
     text-align: justify;
     font-weight: 500;
-    font-family:var(--font-padrao)
+    font-family:var(--font-padrao);
+    margin-bottom: 20px;
     
 }
 div.projeto{
@@ -238,20 +239,28 @@ div.projeto{
     max-width: 300px;
     
 }
-.projeto a, img{
+.projeto img{
     max-width: 100%;
 
 }
-.projeto:hover{
-    align-items: center;
-    display: block;
+
+
+.botão-visualizar{
+    border: 1px solid;
+     width: 100%;
+     height: 30px;
+    color: black;
+    font-family: var(--fonte-destaque);
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.445);
-    padding: 20px;
-    margin:50px;
-    max-width: 300px;
+    margin-left: auto;
 
 }
+.botão-visualizar:hover{
+    color: white;
+    background-color: black;
+
+}
+
 
 
 footer{
@@ -316,7 +325,13 @@ footer p{
 .projeto{
     margin: 0;
 }
+.link:hover{
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    color: black;
 
+}
 
 
 
