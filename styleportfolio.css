@@ -250,7 +250,8 @@ div.projeto{
      width: 100%;
      height: 30px;
     color: black;
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte-padrao);
+    font-weight:bold;
     border-radius: 5px;
     margin-left: auto;
 
