@@ -32,7 +32,6 @@ nav{
     background-color: black;
     height: 60px;
     width: 100%;
-    position: fixed;
     top: 0;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.192);
 }
@@ -43,6 +42,40 @@ nav{
     margin: 5px;
 
    
+}
+.hamburguer{
+    display: none;
+    width: 20px;
+    height: 20px;
+    background-image: url("Imagens/icon-hamburger.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu-mobile{
+    display: none;
+    background-color: black;
+    height: 200px;
+    padding: 30px;
+}
+.menu-mobile li{
+    margin: auto;
+    margin-bottom: 40px;
+    width: 300px;
+   
+    text-align: center;
+}
+.menu-mobile .link{
+    margin: auto;
+    padding: 10px 20px 10px 20px;
+    
+}
+.menu-mobile .link:hover{
+    margin: auto;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    
 }
 .Logo{
     color: white;
@@ -234,8 +267,6 @@ div.projeto{
     max-width: 100%;
 
 }
-
-
 .botão-visualizar{
     border: 1px solid;
      width: 100%;
@@ -252,9 +283,6 @@ div.projeto{
     background-color: black;
 
 }
-
-
-
 footer{
     width: 100%;
     background-color: black;
@@ -267,6 +295,16 @@ footer{
 footer p{
     font-family: var(--font-padrao);
     
+}
+.show-mobile{
+    display: block;
+}
+.plano-fundo{
+    background-image:url("Imagens/icon-close.svg");
+    transition: 1s;
+}
+.ocultar{
+    display: none;
 }
 /* USO DE MEDI QUERY*/
 @media screen and (max-width:777px){
@@ -301,6 +339,16 @@ footer p{
  
 }
 @media screen and (max-width:493px){
+.menu{
+    display: none;
+}
+nav{
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.hamburguer{
+    display: block;
+}
 
 .link{
     margin:2px;
