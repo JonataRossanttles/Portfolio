@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
 *{
     list-style: none;
     margin: 0;
@@ -15,8 +17,8 @@ html{
     
 }
 :root{
-    --font-padrao: 'barlow',serif;
-    --fonte-destaque: 'Fraunces',serif;
+    --font-padrao: 'Josefin Sans',serif;
+    --fonte-destaque: 'Josefin Sans',serif;
 }
 body{
     background-color: white;
@@ -157,6 +159,7 @@ main #p3{
        
 }
 .botãoredes{
+    cursor: pointer;
     border-radius: 5px;
     height: 50px;
     width: 90px;
@@ -219,13 +222,13 @@ section p{
     
     margin-top: 10px;
     min-width: 320px;
-    max-width: 1100px;
+    max-width: 1000px;
     background-color: white;
     margin: auto;  
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.055);
 }
 #containerprojetos h1{
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-destaque);
     padding-top: 10px;
     margin-bottom: 30px;
     font-size: 2.5rem;
@@ -247,11 +250,12 @@ section p{
 
 .projeto p{
     text-align: justify;
-    font-weight: 500;
+    font-weight: bold;
     font-family:var(--font-padrao);
     margin-bottom: 20px;
     
 }
+
 div.projeto{
     align-items: center;
     display: block;
@@ -268,6 +272,7 @@ div.projeto{
 
 }
 .botão-visualizar{
+    cursor: pointer;
     border: 1px solid;
      width: 100%;
      height: 30px;
@@ -306,7 +311,158 @@ footer p{
 .ocultar{
     display: none;
 }
+/* CONFIGURANDO O CARROCEL*/
+.slider{
+    width: 900px;
+    height: 700px;
+    overflow: hidden;
+    margin: auto;
+}
+.slides{
+    width: 3600px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide-one, .slide{
+    width: 900px;
+    height: 600px;
+    
+}
+.slide-one img, .slide img{
+    width: 900px;
+    height: 600px;
+}
+
+.menu-slide{
+    position: absolute;
+    margin-top: -40px;
+    justify-content: center;
+    display: flex;
+    width: 900px;
+    
+}
+.navigation-menu{
+    position: absolute;
+    margin-top: 560px;
+    margin-left: 386px;
+    display: flex;
+    width: 129px;
+}
+
+.navigation-menu div{
+    background-color: rgba(128, 128, 128, 0.179);
+    border: solid 1px white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+.navigation-menu div:not(:last-child){
+    margin-right: 20px;
+}
+.menu-botão{
+    
+    border: solid 1px white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.menu-botão:not(:last-child){
+    margin-right: 20px;
+}
+.menu-botão:hover{
+    background-color: white;
+}
+#radio1:checked ~ .slide-one{
+    margin-left: 0px;
+    transition: 0.5s;
+}
+#radio2:checked ~ .slide-one{
+    margin-left: -900px;
+    transition: 0.5s;
+}
+#radio3:checked ~ .slide-one{
+    margin-left: -1800px;
+    transition: 0.5s;
+}
+#radio4:checked ~ .slide-one{
+    margin-left: -2700px;
+    transition: 0.5s;
+}
+#radio1:checked ~ .navigation-menu .auto-btn1{
+    background-color: white;
+}
+#radio2:checked ~ .navigation-menu .auto-btn2{
+    background-color: white;
+}
+#radio3:checked ~ .navigation-menu .auto-btn3{
+    background-color: white;
+}
+#radio4:checked ~ .navigation-menu .auto-btn4{
+    background-color: white;
+}
+
+
+
 /* USO DE MEDI QUERY*/
+@media screen and  (max-width:902px){
+    .slider{
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        margin: auto;
+    }
+    .slides{
+        width: 1600px;
+        display: flex;
+    }
+    .slide-one, .slide{
+        width: 400px;
+        height: 400px;
+        
+    }
+    .slide-one img, .slide img{
+        width: 400px;
+        height: 400px;
+    }
+    .menu-slide{
+        position: absolute;
+        margin-top: -40px;
+        justify-content: center;
+        display: flex;
+        width: 400px;
+        
+    }
+    .navigation-menu{
+        position: absolute;
+        margin-top: 360px;
+        margin-left: 136px;
+        display: flex;
+      
+    }
+    #radio1:checked ~ .slide-one{
+        margin-left: 0px;
+        transition: 0.5s;
+    }
+    #radio2:checked ~ .slide-one{
+        margin-left: -400px;
+        transition: 0.5s;
+    }
+    #radio3:checked ~ .slide-one{
+        margin-left: -800px;
+        transition: 0.5s;
+    }
+    #radio4:checked ~ .slide-one{
+        margin-left: -1200px;
+        transition: 0.5s;
+    }
+
+}
 @media screen and (max-width:777px){
 
  main{

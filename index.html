@@ -52,51 +52,67 @@
     </div>
     
 </section>
+<div id="containerprojetos">
+    <h1>Projetos</h1>
+
+
    
-    <div id="containerprojetos">
-        <h1>Projetos</h1>
-        <div id="projetos">
-            <div class="projeto"> 
-                <img src="Imagens/Sunnyside 300x200.png" alt="" >
-                <p>Desenvolvimento de uma página web, onde o  desafio extraído do site front-end mentor com o intuito de aprimorar meus conhecimentos
-                    em posicionamento através do flex-box, uma página completamente responsiva com o mínimo de 370px.
-                </p>
-                 <a href="https://jonatarossanttles.github.io/Sunnyside/" target="_blank"><input type="button" value="Visualizar" class="botão-visualizar"></a>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1" >
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide-one">
+                <a href="https://jonatarossanttles.github.io/Space-Tourism/" target="_blank"> <img src="Imagens/sapce tourism full.png" alt=""></a>
             </div>
-            
-            <div class="projeto" >
-                <img src="Imagens/people 300x200.jpg" alt="" >
-                <p> Minha primeira aventura no mundo do desenvolvimeto front-End, construído 100% em HTLM5 e CSS3, 
-                    projeto desenvolvido no intuito de promover um marketing positivo para uma empresa Fictícia através de uma 
-                    Landing Page para Captura de Leads.
-                 </p>
-                
-                <a href=" https://jonatarossanttles.github.io/PAGINA-DE-CAPTURA-WORKSHOP/" target="_blank"><input type="button" value="Visualizar" class="botão-visualizar"></a>
-            </div>            
-
+           <div class="slide">
+            <a href="https://jonatarossanttles.github.io/PAGINA-DE-CAPTURA-WORKSHOP/" target="_blank"> <img src="Imagens/people Full.jpg" alt=""></a>
+           </div>
+           <div class="slide">
+            <a href="https://jonatarossanttles.github.io/Loopstudios/" target="_blank" > <img src=" Imagens/Loopstudios full.png" alt=""></a>
+           </div>
+           <div class="slide">
+            <a href="https://jonatarossanttles.github.io/Sunnyside/" target="_blank"> <img src="Imagens/Sunnyside.png" alt=""></a>
+           </div>
+           <div class="navigation-menu">
+            <div class="auto-btn1" ></div>
+            <div class="auto-btn2" ></div>
+            <div class="auto-btn3" ></div>
+            <div class="auto-btn4" ></div>
+                      
         </div>
-        <div id="projetos2">
-            <div class="projeto"> 
-                <img src="Imagens/Loopstudios 300x200.png" alt="" >
-                <p> Projeto desenvolvido através de um desafio proposto pelo site Front-end Mentor, utilizei esse projeto para aprimorar o uso do CSS 
-                    GRID e a sobreposição de imagens, assim como a criação de um menu mobile tentando sempre reproduzir de forma fiel a imagem.
-                </p>
-                <a href="https://jonatarossanttles.github.io/Loopstudios/" target="_blank"><input type="button" value="Visualizar" class="botão-visualizar"></a>
-            </div>
-            
-            <div class="projeto" >
-                <img src="Imagens/em construação 300x200.png" alt="" >
-                <p>Projeto em construção...</p>
-                <a href="#" target="_blank"><input type="button" value="Visualizar" class="botão-visualizar"></a>
-            </div>            
-
         </div>
-
-    </div>                        
+        <div class="menu-slide">
+            <label for="radio1" class="menu-botão"></label>
+            <label for="radio2" class="menu-botão"></label>
+            <label for="radio3" class="menu-botão"></label>
+            <label for="radio4" class="menu-botão"></label>
+        </div>
+       
+    </div>     
+</div>                
     <footer>
         <p>Site Desenvolvido por Jonata Rossanttles</p>
     </footer>
     <script>
+        let count =1
+document.getElementById("radio1").checked = true 
+
+setInterval( function(){
+next()
+},(3000))
+
+function next(){
+count+=1
+let botao = document.getElementsByClassName("auto-btn"+count)[0]
+if (count>4){
+    count=1
+}
+document.getElementById("radio"+count).checked = true 
+
+}
 var hamburguer = document.getElementsByClassName("hamburguer")[0]
 hamburguer.addEventListener("click",mostrar)
 
