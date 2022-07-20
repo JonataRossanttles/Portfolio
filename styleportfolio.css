@@ -225,12 +225,13 @@ section p{
     max-width: 1000px;
     background-color: white;
     margin: auto;  
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.055);
+    
 }
 #containerprojetos h1{
     font-family: var(--fonte-destaque);
     padding-top: 10px;
     margin-bottom: 30px;
+    margin-top: 20px;
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
@@ -539,6 +540,9 @@ nav{
 
 }
 @media screen and (max-width:400px){
+    #containerprojetos h1{
+        margin-top: 10px;
+    }
     
 .apresentação{
     margin: 100px;
@@ -566,6 +570,56 @@ nav{
 }
 .soueu h1{
     text-align: center;
+}
+.slider{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: auto;
+}
+.slides{
+    width: 1200px;
+    display: flex;
+}
+.slide-one, .slide{
+    width: 300px;
+    height: 300px;
+    
+}
+.slide-one img, .slide img{
+    width: 300px;
+    height: 300px;
+}
+.menu-slide{
+    position: absolute;
+    margin-top: -40px;
+    justify-content: center;
+    display: flex;
+    width: 300px;
+    
+}
+.navigation-menu{
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 86px;
+    display: flex;
+  
+}
+#radio1:checked ~ .slide-one{
+    margin-left: 0px;
+    transition: 0.5s;
+}
+#radio2:checked ~ .slide-one{
+    margin-left: -300px;
+    transition: 0.5s;
+}
+#radio3:checked ~ .slide-one{
+    margin-left: -600px;
+    transition: 0.5s;
+}
+#radio4:checked ~ .slide-one{
+    margin-left: -900px;
+    transition: 0.5s;
 }
 
 
