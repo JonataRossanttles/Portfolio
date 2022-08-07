@@ -227,7 +227,7 @@ section p{
     margin: auto;  
     
 }
-#containerprojetos h1{
+.titulo-container{
     font-family: var(--fonte-destaque);
     padding-top: 10px;
     margin-bottom: 30px;
@@ -318,6 +318,8 @@ footer p{
     height: 700px;
     overflow: hidden;
     margin: auto;
+    
+   
 }
 .slides{
     width: 3600px;
@@ -334,6 +336,24 @@ footer p{
 .slide-one img, .slide img{
     width: 900px;
     height: 600px;
+}
+.titulo-projeto{
+    font-family: var(--fonte-destaque);
+    font-weight: 100;
+    position: relative;
+    font-size: 3rem;
+   top: 80px;
+    text-align: center;
+    color: white;
+    
+}
+.titulo{
+    justify-content: center;
+   margin-top: 50px;
+   
+    display: flex;
+    
+    
 }
 
 .menu-slide{
@@ -396,16 +416,16 @@ footer p{
     transition: 0.5s;
 }
 #radio1:checked ~ .navigation-menu .auto-btn1{
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.473);
 }
 #radio2:checked ~ .navigation-menu .auto-btn2{
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.473);
 }
 #radio3:checked ~ .navigation-menu .auto-btn3{
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.473);
 }
 #radio4:checked ~ .navigation-menu .auto-btn4{
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.473);
 }
 
 
