@@ -52,6 +52,17 @@ nav{
 .opções-menu:not(:last-child){
     margin-right: 30px;
 }
+.celular1{
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    align-self: center;
+    margin-right: 5px;
+    position: relative;
+    padding: 3px;
+
+}
 .celular{
     background-color: white;
     width: 20px;
@@ -61,6 +72,7 @@ nav{
     margin-right: 5px;
     position: relative;
     left: -10px;
+    padding: 3px;
 }
 #fale-comigo{
     margin-right: 10px;
