@@ -8,6 +8,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -26,12 +27,12 @@ body{
     
 }
 
-nav{
+.menu-desktop{
     min-width: 320px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-image: linear-gradient(to right,#005fb4,#00579d, #00347f) ;
     height: 60px;
     width: 100%;
     top: 0;
@@ -39,12 +40,26 @@ nav{
 }
 
 .menu{
-    background-color: rgba(0, 0, 0, 0.486);
+    background-color:none;
     display: flex;
     margin: 5px;
     height: 40px;
    
 }
+.video{
+    width: 100%;
+    display: block;
+    background-image:linear-gradient(to right,#005294,#014e91,#00498d,#01478a,#004486) ;
+    padding-bottom: 100px;
+}
+#video2{
+   
+    width: 100%;
+    display: none;
+    background-image:linear-gradient(to right,#005294,#014e91,#00498d,#01478a,#004486) ;
+    padding-bottom: 100px;
+}
+
 .opções-menu{
     display: flex;
    align-items: center;
@@ -90,12 +105,11 @@ nav{
     background-color: black;
     height: 240px;
     padding: 30px;
+    background-image: linear-gradient(to right,#005fb4,#00579d, #00347f) ;
 }
 .menu-mobile li{
     text-align: center;
 }
-
-
 .opções-menu-mobile{
     display: flex;
     justify-content: center;
@@ -136,47 +150,48 @@ nav{
 }
 main{
     justify-content: space-around;
-    display: flex;
-    min-width: 320px;
-    max-width: 1000px;
         background-color: white;
-    margin: auto;
-    margin-top: 50px;
+    
     
     
 }
 main #p1{
     font-family: var(--fonte-padrao);
-    font-size: 1.3em; 
-    color: rgba(0, 0, 0, 0.63);
+    font-size: 1.5em; 
+    color: white;
     font-weight: bold;
        
 }
 
 main #p2{
     font-family: arial black;
-    font-size: 2.2em;
+    font-size: 2.5em;
     
     margin-top: 30px;
-    color: rgba(0, 0, 0, 0.938);
+    color: white;
        
 }
 main #p3{
     font-family: var(--font-padrao);
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: bold;
     margin-top: 30px;
-    color: rgba(0, 0, 0, 0.637);
+    color: white;
     margin-bottom: 20px;
        
 }
 
 .apresentação{
-    width: 400px;
    align-self: center;
    display: block;
-   margin-left: 20px;
+   position: relative;
     
+}
+.container-apresentação{
+    width: 400px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
 }
 .redessociais{
     
@@ -190,7 +205,7 @@ main #p3{
 }
 .botãoredes{
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20px;
     height: 50px;
     width: 90px;
     color: black;
@@ -199,53 +214,67 @@ main #p3{
     font-weight: 900;
     border: 1px solid;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
-    
+    background-color: #00579d;
+    color: white;
 }
 .botãoredes:hover{
-    background-color: black;
+    background-color: #00347f;
     color: white;
-    border-radius: 5px;
-    border: 1px solid;
+    
     
 }
 
 section#quemsoueu{
-    background-color: black;
+   background-color: black;
     width: 100%;
+    position: relative;
+    top: -5px;
+    
+   
+}
+.foto-jonata{
+    align-self: flex-end;
 }
 .soueu{
     
     width: 100%;
-    display: flex;
     margin: auto;
+    display: flex;
+    flex-direction: column;
     
 }
 .descrição{
-    margin: 50px;
+   margin: auto;
+    padding: 0px 30px 60px 30px;
+    margin-top: 90px;
+    width: 500px;
 }
 section h1{
     color: white;
     margin-top: 10px;
     margin-bottom: 40px;
-    font-size: 1.7em;
+    font-size: 2.7em;
     font-family: var(--fonte-padrao);
-    font-weight: 700;
+    text-align: center;
+    
 }
 section p{
     color: white;
     line-height: 2em;
-    font-size: 1.1em;
+    font-size: 1.5em;
     font-family: var(--font-padrao);
     text-align: justify;
     
 }
 .imagem2{
-    min-width: 100px;
-    max-width: 300px;
-    display: block;
-    margin: 55px 0px 50px 0px;
+    width: 240px;
+    margin-top: 100px ;
     padding-left: 10px;
+   
     
+}
+.img2{
+    text-align: center;
 }
 
 #containerprojetos{
@@ -461,6 +490,12 @@ footer p{
 
 
 /* USO DE MEDI QUERY*/
+@media screen and  (max-width:977px){
+  
+.container-apresentação{
+    top: 74px;
+}
+}
 @media screen and  (max-width:902px){
     .slider{
         width: 400px;
@@ -534,9 +569,10 @@ footer p{
     margin: auto;
     margin-bottom: 20px;
 }
- .apresentação{
-     padding-top: 30px;
-     margin-left: 0;
+ .container-apresentação{
+     top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
      text-align: center;
 
  }
@@ -556,11 +592,26 @@ footer p{
         padding-right: 20px;
         box-sizing: border-box;
     }
+    .descrição{
+        width: 100%;
+        margin-left: 0;
+    }
+    main #p1{
+        font-size: 1.2em; 
+        margin-bottom: 10px;
+    }
     
+    main #p2{
+        font-size: 2em;  
+        margin-top: 10px;
+    }
+    main #p3{
+        font-size: 1.5em;
+    }
+   
+   
 }
 @media screen and (max-width:493px){
-
-
 
 .link{
     margin:2px;
@@ -570,7 +621,6 @@ footer p{
 }
 .imagem2{
     padding: 5px;
-    margin: auto;
 }
 .descrição{
     text-align: center;
@@ -598,15 +648,18 @@ footer p{
     #containerprojetos h1{
         margin-top: 10px;
     }
-    
+   
+    .container-apresentação{
+        width: 300px;
+    }
 .apresentação{
-    margin: 100px;
+    
     text-align: center;
 }
 .redessociais{
     width: 200px;
     text-align: center;
-    margin-right: 20px;
+    margin: auto;
 }
 .redessociais a{
     margin: 10px;
@@ -618,7 +671,7 @@ footer p{
 }
 .imagem2{
     padding-top: 10px;
-    margin: auto;
+    
 }
 #quemsoueu{
     width: 100%;

@@ -10,7 +10,7 @@
 </head>
 
 <body >
-    <nav >
+    <nav class="menu-desktop">
         <a href="#" class="Logo"> J.R </a>
         <ul class="menu">
             <li class="opções-menu"><a href="#" class="link"> Início</a></li>
@@ -22,6 +22,7 @@
            <a href="#" class="hamburguer"></a> 
             
     </nav>
+    
     <ul class="menu-mobile">
         <li class="opções-menu-mobile"><a href="#" class="link"> Início</a></li>
         <li class="opções-menu-mobile"><a href="#quemsoueu" class="link"> Quem sou eu</a></li>
@@ -31,16 +32,23 @@
     </ul>
 <main>
     <div class="apresentação">
-        <p id="p1">Olá, sejam bem - vindos</p> 
-        <p id="p2">Eu Sou Jonata</p>
-        <p id="p3">Analista de Negócios Sênior & Desenvolvedor Front-End</p>
-        <div class="redessociais">
-            <a href="https://www.linkedin.com/in/jonata-rossanttles-5a9101148/"  target="_blank" class="botãolink"> <button class="botãoredes">Linkedin</button></a>
-            <a href="https://github.com/JonataRossanttles" target="_blank" class="botãolink"> <button class="botãoredes">Github</button></a>
-        </div>
+     
+        <video src="Imagens/Intro Plink.webm" autoplay loop muted class="video" id="video1"></video>
+        <video src="Imagens/loop Plink.mp4" autoplay loop muted class="video" id="video2"></video>
+         <div class="container-apresentação">
+             <p id="p1">Olá, sejam bem - vindos</p> 
+             <p id="p2">Eu Sou Jonata</p>
+             <p id="p3">Analista de Negócios Sênior & Desenvolvedor Front-End</p>
+             <div class="redessociais">
+                <a href="https://www.linkedin.com/in/jonata-rossanttles-5a9101148/"  target="_blank" class="botãolink"> <button class="botãoredes">Linkedin</button></a>
+                <a href="https://github.com/JonataRossanttles" target="_blank" class="botãolink"> <button class="botãoredes">Github</button></a>
+            </div>
+         </div>
+        
+        
                
     </div>
-    <img src="Imagens/UcsGPgT.png" alt="Foto de Jonata" class="foto-jonata">
+   
 </main>
 <section id="quemsoueu">
     <div class="soueu">
@@ -135,6 +143,12 @@ function mostrar(){
     }
 }
 
+var video = document.querySelector(".video")
+var video2 = document.querySelector("#video2")
+let frame = setTimeout(function framevideo(){
+    video.style.display = "none"
+    video2.style.display = "block"
+}, 5998);
 
 
     </script>
