@@ -176,6 +176,8 @@ main #p2{
     color: white;
        
 }
+
+
 main #p3{
     font-family: var(--font-padrao);
     font-size: 1.7em;
@@ -185,6 +187,21 @@ main #p3{
     margin-bottom: 20px;
        
 }
+#p3::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: piscar .7s infinite;
+    }
+
+    @keyframes piscar{
+        0%,100%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+    }
 
 .apresentação{
    align-self: center;

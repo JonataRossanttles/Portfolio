@@ -33,12 +33,12 @@
 <main>
     <div class="apresentação">
      
-        <video src="Imagens/Intro Plink.webm" autoplay loop muted class="video" id="video1"></video>
-        <video src="Imagens/loop Plink.mp4" autoplay loop muted class="video" id="video2"></video>
+        <video src="Imagens/Intro Plink.webm" autoplay loop muted playsinline class="video" id="video1"></video>
+        <video src="Imagens/loop Plink.mp4" autoplay loop muted playsinline class="video" id="video2"></video>
          <div class="container-apresentação">
              <p id="p1">Olá, sejam bem - vindos</p> 
              <p id="p2">Eu Sou Jonata</p>
-             <p id="p3">Analista de Negócios Sênior & Desenvolvedor Front-End</p>
+             <p id="p3">Analista de Negócios Sênior e Desenvolvedor Front-End</p>
              <div class="redessociais">
                 <a href="https://www.linkedin.com/in/jonata-rossanttles-5a9101148/"  target="_blank" class="botãolink"> <button class="botãoredes">Linkedin</button></a>
                 <a href="https://github.com/JonataRossanttles" target="_blank" class="botãolink"> <button class="botãoredes">Github</button></a>
@@ -109,6 +109,54 @@
         <p>Site Desenvolvido por Jonata Rossanttles</p>
     </footer>
     <script>
+
+let apresentaçãoh1 = document.querySelector("#p1") 
+let apresentaçãoh2 = document.querySelector("#p2") 
+let apresentaçãoh3 = document.querySelector("#p3") 
+
+
+function digitação(elemento1,elemento2,elemento3){
+    const textoh1 = elemento1.innerHTML.split('')
+    const textoh2 = elemento2.innerHTML.split('')
+    const textoh3 = elemento3.innerHTML.split('')
+    elemento2.innerHTML = ''
+    elemento3.innerHTML = ''
+
+textoh2.forEach(function(letra,i){
+
+setTimeout(function(){
+    elemento2.innerHTML += letra
+},75*i)
+
+console.log(letra)
+})
+textoh3.forEach(function(letra,i){
+
+setTimeout(function(){
+    elemento3.innerHTML += letra
+},80*i)
+
+console.log(letra)
+})
+
+
+}
+
+
+
+
+digitação(apresentaçãoh1,apresentaçãoh2,apresentaçãoh3)
+
+
+
+
+
+
+
+
+
+
+
         let count =1
 document.getElementById("radio1").checked = true 
 
@@ -127,7 +175,7 @@ document.getElementById("radio"+count).checked = true
 }
 var hamburguer = document.getElementsByClassName("hamburguer")[0]
 hamburguer.addEventListener("click",mostrar)
-
+/*Menu Mobile*/
 function mostrar(){
     var apresentacao = document.getElementsByClassName("apresentação")[0]
     var menumob = document.getElementsByClassName("menu-mobile")[0]
@@ -142,7 +190,7 @@ function mostrar(){
         menumob.classList.add("show-mobile")
     }
 }
-
+/*troca do vídeo*/
 var video = document.querySelector(".video")
 var video2 = document.querySelector("#video2")
 let frame = setTimeout(function framevideo(){
