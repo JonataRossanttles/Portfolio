@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="styleportfolio.css">
     <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
@@ -57,7 +58,7 @@
         </div>
         
         <div class="descrição">
-            <h1>Quem sou eu?</h1>
+            <h1 class="h1desc">Quem sou eu?</h1>
             <p>Meu nome é Jonata Rossanttles sou formado em Engenharia Civil desde 2018 atualmente atuo na análise de dados, desempenho a função desde 1 de maio de 2021, sou muito feliz com o que faço, porém estou disposto a ingressar no mundo do desenvolvimento Front - end, pois sou movido a desafios e acredito que esse novo mundo será mais um grande passo na minha carreira.</p>
         </div>
             
@@ -110,6 +111,15 @@
     </footer>
     <script>
 
+/*Efeito Scrool*/
+window.sr = ScrollReveal({reset:true})
+sr.reveal('.soueu',{duration:1000},
+{rotate: {x:80,y:100,z:90}})
+
+
+
+
+/*Efeito de Digitação*/
 let apresentaçãoh1 = document.querySelector("#p1") 
 let apresentaçãoh2 = document.querySelector("#p2") 
 let apresentaçãoh3 = document.querySelector("#p3") 
@@ -144,6 +154,7 @@ console.log(letra)
 
 digitação(apresentaçãoh1,apresentaçãoh2,apresentaçãoh3)
 
+/*Efeito do Carrocel*/
         let count =1
 document.getElementById("radio1").checked = true 
 

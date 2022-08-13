@@ -263,6 +263,7 @@ section#quemsoueu{
     margin: auto;
     display: flex;
     flex-direction: column;
+    visibility: hidden;
     
 }
 .descrição{
