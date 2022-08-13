@@ -11,6 +11,10 @@
 </head>
 
 <body >
+   
+    
+   
+<main>
     <nav class="menu-desktop">
         <a href="#" class="Logo"> J.R </a>
         <ul class="menu">
@@ -23,7 +27,6 @@
            <a href="#" class="hamburguer"></a> 
             
     </nav>
-    
     <ul class="menu-mobile">
         <li class="opções-menu-mobile"><a href="#" class="link"> Início</a></li>
         <li class="opções-menu-mobile"><a href="#quemsoueu" class="link"> Quem sou eu</a></li>
@@ -31,7 +34,6 @@
         <li class="opções-menu-mobile" > <img src="Imagens/telefone.png" alt="" class="celular">
             <a href="https://contate.me/jonatadesenvolvedorweb" class="link" target="_blank" id="fale-comigo-mobile"> Fale comigo</a></li>
     </ul>
-<main>
     <div class="apresentação">
      
         <video src="Imagens/Intro Plink.webm" autoplay loop muted playsinline class="video" id="video1"></video>
@@ -59,7 +61,11 @@
         
         <div class="descrição">
             <h1 class="h1desc">Quem sou eu?</h1>
-            <p>Meu nome é Jonata Rossanttles sou formado em Engenharia Civil desde 2018 atualmente atuo na análise de dados, desempenho a função desde 1 de maio de 2021, sou muito feliz com o que faço, porém estou disposto a ingressar no mundo do desenvolvimento Front - end, pois sou movido a desafios e acredito que esse novo mundo será mais um grande passo na minha carreira.</p>
+            <p class="pdesc">Meu nome é Jonata Rossanttles sou formado em Engenharia Civil desde 2018 atualmente 
+                atuo na análise de dados, desempenho a função desde 1 de maio de 2021, sou muito feliz com o que faço, 
+                porém estou disposto a ingressar no mundo do desenvolvimento Front - end, pois sou movido a desafios e acredito que 
+                esse novo mundo será mais um grande passo na minha carreira.
+            </p>
         </div>
             
     </div>
@@ -113,10 +119,9 @@
 
 /*Efeito Scrool*/
 window.sr = ScrollReveal({reset:true})
-sr.reveal('.soueu',{duration:1000},
-{rotate: {x:80,y:100,z:90}})
-
-
+sr.reveal('main',{ rotate:{ x:0, y:100, z:0}, duration:500})
+sr.reveal('.soueu',{ rotate:{ x:0, y:100, z:0}, duration:1000})
+sr.reveal('.slider',{ rotate:{ x:50, y:50, z:0}, duration:500})
 
 
 /*Efeito de Digitação*/
