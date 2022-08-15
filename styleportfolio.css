@@ -285,7 +285,7 @@ section#quemsoueu{
     padding-right: 30px;
     cursor: pointer;
     width: 20px;
-    position: relative;
+    position: absolute;
     right: 0;
 }
 
