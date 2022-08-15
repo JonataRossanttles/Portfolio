@@ -63,6 +63,14 @@ body{
    /* padding-bottom: 100px;*/
 }
 
+
+.video3{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
 .opções-menu{
     display: flex;
    align-items: center;
@@ -249,7 +257,7 @@ section#quemsoueu{
     width: 100%;
     position: relative;
     top: -5px;
-    
+    height: 1000px;
    
 }
 
@@ -259,21 +267,56 @@ section#quemsoueu{
     margin: auto;
     display: flex;
     flex-direction: column;
-    visibility: hidden;
     
 }
 .descrição{
-   margin: auto;
+   
     padding: 0px 30px 60px 30px;
-    margin-top: 90px;
-    width: 500px;
+    margin-top: 40px;
+    width: 100%;
+    
+}
+.fechar{
+    color: white;
+    font-family: var(--fonte-destaque);
+    margin-top: 10px;
+    text-align: right;
+    padding-right: 30px;
+    cursor: pointer;
+    width: 20px;
+    position: absolute;
+    right: 0;
+}
+
+.toque-saiba-mais{
+    position: absolute;
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 2.5rem;
+    font-weight: bold;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: piscar 1s infinite;
+    cursor: pointer;
+}
+
+.section2{
+    background-color: rgba(0, 0, 0, 0.922);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    
 }
 section h1{
     color: white;
-    margin-top: 10px;
-    margin-bottom: 40px;
+    
+    margin-bottom: 20px;
     font-size: 2.7em;
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-destaque);
     text-align: center;
     
 }
@@ -287,13 +330,15 @@ section p{
 }
 .imagem2{
     width: 240px;
-    margin-top: 100px ;
+    margin-top: 40px ;
     padding-left: 10px;
-   
+  
     
 }
 .img2{
     text-align: center;
+   
+    
 }
 
 #containerprojetos{
@@ -508,10 +553,15 @@ footer p{
 }
 
 
-
+.mostrar{
+    display: block;
+}
 /* USO DE MEDI QUERY*/
 
 @media screen and  (max-width:902px){
+    .toque-saiba-mais{
+        font-size: 1.5rem;
+    }
     .slider{
         width: 400px;
         height: 400px;
@@ -597,6 +647,9 @@ footer p{
  
 }
 @media screen and (max-width:600px){
+    .toque-saiba-mais{
+        font-size: 1rem;
+    }
     .menu{
         display: none;
     }

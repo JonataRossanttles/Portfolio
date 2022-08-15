@@ -54,9 +54,16 @@
    
 </main>
 <section id="quemsoueu">
+    <video src="Imagens/tecnology2.mp4" autoplay muted loop class="video3"></video>
+    <div class="toque-saiba-mais">TOQUE E SAIBA MAIS</div>
+   
+    
+</section>
+<section class="section2">
+    <div class="fechar">X</div>
     <div class="soueu">
         <div class="img2">
-            <img src="Imagens/JONATA 200x200 praia.png" alt="" class="imagem2">
+            <img src="Imagens/JONATA 200x200 praia.png" alt="" class="imagem2"> 
         </div>
         
         <div class="descrição">
@@ -69,8 +76,8 @@
         </div>
             
     </div>
-    
 </section>
+
 <div id="containerprojetos">
     <h1 class="titulo-container">Projetos</h1>
 
@@ -117,10 +124,15 @@
     </footer>
     <script>
 
+
+
+
+
+
 /*Efeito Scrool*/
 window.sr = ScrollReveal({reset:true})
 sr.reveal('main',{ rotate:{ x:0, y:100, z:0}, duration:500})
-sr.reveal('.soueu',{ rotate:{ x:0, y:100, z:0}, duration:1000})
+/*sr.reveal('.soueu',{ rotate:{ x:0, y:100, z:0}, duration:1000})*/
 sr.reveal('.slider',{ rotate:{ x:50, y:50, z:0}, duration:800})
 
 
@@ -201,6 +213,24 @@ let frame = setTimeout(function framevideo(){
     video.style.display = "none"
     video2.style.display = "block"
 }, 5998);
+
+
+/*troca do vídeo*/
+var toq = document.getElementsByClassName("toque-saiba-mais")[0]
+    let btnfechar = document.querySelector(".fechar")
+    let lbx = document.querySelector(".section2")
+
+
+
+    toq.addEventListener("click",bt)
+    btnfechar.addEventListener("click",fechar)
+ 
+  function bt(){
+    lbx.style.display = "block"
+  }
+  function fechar(){
+    lbx.style.display = "none"
+  }
 
 
     </script>
