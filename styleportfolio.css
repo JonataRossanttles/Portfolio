@@ -718,9 +718,7 @@ footer p{
  main{
     justify-content: center;
  }
- main img{
-     display: none;
- }
+ 
  #projetos{
      display: block; 
  }
