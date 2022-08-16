@@ -54,8 +54,54 @@
    
 </main>
 <section id="quemsoueu">
-    <video src="Imagens/tecnology2.mp4" autoplay muted loop class="video3"></video>
-    <div class="toque-saiba-mais">TOQUE E SAIBA MAIS</div>
+    <div class="titulo-quem-sou">UM POUCO SOBRE MIM</div>
+<div class="container-cards">
+    <div class="card">
+        <h2 class="titulo-card1">Competências Técnicas</h2>
+        <div class="container-card">
+            <ul class="lista-card">
+             <li class="item-lista-card">Html</li>
+             <li class="item-lista-card">CSS</li>
+             <li class="item-lista-card">Javascript</li>
+             <li class="item-lista-card">Vba</li>
+             <li class="item-lista-card">Excel Avançado</li>
+             <li class="item-lista-card">Power Query</li>
+            </ul> 
+        </div>
+     
+    </div>
+
+
+    <div class="card">
+        <h2 class="titulo-card1">Habilidades</h2>
+        <div class="container-card">
+            <ul class="lista-card">
+             <li class="item-lista-card">Criatividade</li>
+             <li class="item-lista-card">Iniciativa</li>
+             <li class="item-lista-card">Comprometimento</li>
+             <li class="item-lista-card">Bom relacionamento Interpessoal</li>
+             <li class="item-lista-card">Dinamismo</li>
+             <li class="item-lista-card">Trabalho em Equipe</li>
+            </ul> 
+        </div>
+     
+    </div>
+
+    <div class="card">
+        <h2 class="titulo-card1">Experiência</h2>
+        <div class="container-card">
+            
+            <ul class="lista-card">
+             <li class="item-lista-card">Em busca da minha primeira Oportunidade</li>
+          
+            </ul> 
+        </div>
+     
+    </div>
+</div>
+
+    <div class="toque-saiba-mais">Saiba mais...</div>
+    
    
     
 </section>
@@ -68,10 +114,9 @@
         
         <div class="descrição">
             <h1 class="h1desc">Quem sou eu?</h1>
-            <p class="pdesc">Meu nome é Jonata Rossanttles sou formado em Engenharia Civil desde 2018 atualmente 
-                atuo na análise de dados, desempenho a função desde 1 de maio de 2021, sou muito feliz com o que faço, 
-                porém estou disposto a ingressar no mundo do desenvolvimento Front - end, pois sou movido a desafios e acredito que 
-                esse novo mundo será mais um grande passo na minha carreira.
+            <p class="pdesc">Meu nome é Jonata Rossanttles sou formado em Engenharia Civil, atualmente 
+                atuo na análise de dados do setor comercial do  <strong>Grupo ser educacional</strong>, sou muito feliz com o que faço, porém estou disposto a ingressar no mundo do desenvolvimento Front - end, 
+                pois sou movido a desafios e acredito que esse novo mundo será mais um grande passo na minha carreira.
             </p>
         </div>
             
@@ -132,7 +177,7 @@
 /*Efeito Scrool*/
 window.sr = ScrollReveal({reset:true})
 sr.reveal('main',{ rotate:{ x:0, y:100, z:0}, duration:500})
-/*sr.reveal('.soueu',{ rotate:{ x:0, y:100, z:0}, duration:1000})*/
+sr.reveal('.container-cards',{ rotate:{ x:0, y:100, z:0}, duration:1000})
 sr.reveal('.slider',{ rotate:{ x:50, y:50, z:0}, duration:800})
 
 
@@ -215,7 +260,8 @@ let frame = setTimeout(function framevideo(){
 }, 5998);
 
 
-/*troca do vídeo*/
+/*light box*/
+var slider = document.querySelector(".slider")
 var toq = document.getElementsByClassName("toque-saiba-mais")[0]
     let btnfechar = document.querySelector(".fechar")
     let lbx = document.querySelector(".section2")
@@ -227,12 +273,17 @@ var toq = document.getElementsByClassName("toque-saiba-mais")[0]
  
   function bt(){
     lbx.style.display = "block"
+    slider.style.display="none"
   }
   function fechar(){
     lbx.style.display = "none"
+    slider.style.display="block"
   }
 
 
+    </script>
+    <script>
+        
     </script>
 </body>
 </html>
