@@ -327,15 +327,14 @@ transition: 0.2s;
     list-style: none;
 }
 
-
-
-
 .soueu{
     
     width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
+    position: relative;
+    margin-top: 30px;
 }
 .descrição{
    
@@ -389,7 +388,7 @@ transition: 0.2s;
     top: 0;
     left: 0;
     display: none;
-    
+    overflow: auto;
 }
 section h1{
     color: white;
