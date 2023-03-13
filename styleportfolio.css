@@ -448,15 +448,15 @@ section p{
 }
 #botaoantes {
     
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.081),rgba(0, 0, 0, 0.464), rgb(0, 0, 0));
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.081),rgba(0, 0, 0, 0.464), rgba(0, 0, 1, 0.41));
     
     
 }
 #botaodepois{
-    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.081),rgba(0, 0, 0, 0.464), rgb(0, 0, 0));
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.081),rgba(0, 0, 0, 0.464), rgba(0, 0, 1, 0.41));
 }
 #botaoantes:hover, #botaodepois:hover{
-    background-color: rgba(0, 0, 0, 0.152);
+  background-color: rgba(0, 0, 0, 0) ;
     
 }
 #projetos{
