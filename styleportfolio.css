@@ -110,7 +110,7 @@ body{
 .menu-mobile{
     display: none;
     background-color: black;
-    height: 270px;
+    height: 300px;
     padding: 30px;
     background-image: linear-gradient(to right,#005fb4,#00579d, #00347f) ;
 }
@@ -131,6 +131,7 @@ body{
     position: relative;
     left: -10px;
 }
+
 .Logo{
     color: white;
     font-size: 22px;
