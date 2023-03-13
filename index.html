@@ -8,6 +8,7 @@
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="styleportfolio.css">
     <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
 
 <body >
@@ -18,21 +19,21 @@
     <nav class="menu-desktop">
         <a href="#" class="Logo"> J.R </a>
         <ul class="menu">
-            <li class="opções-menu"><a href="#" class="link"> Início</a></li>
-            <li class="opções-menu"><a href="#quemsoueu" class="link"> Quem sou eu</a></li>
-            <li class="opções-menu"><a href="#containerprojetos" class="link"> Projetos</a></li>
+            <li class="opções-menu"><a href="#" class="link text-decoration-none"> Início</a></li>
+            <li class="opções-menu"><a href="#quemsoueu" class="link text-decoration-none"> Quem sou eu</a></li>
+            <li class="opções-menu"><a href="#containerprojetos" class="link text-decoration-none"> Projetos</a></li>
             <li class="opções-menu" id="fale-comigo"> <img src="Imagens/telefone.png" alt="" class="celular1">
-                <a href="https://contate.me/jonatadesenvolvedorweb" class="link" target="_blank"> Fale comigo</a></li>
+                <a href="https://contate.me/jonatadesenvolvedorweb" class="link text-decoration-none" target="_blank"> Fale comigo</a></li>
         </ul>
            <a href="#" class="hamburguer"></a> 
             
     </nav>
-    <ul class="menu-mobile">
-        <li class="opções-menu-mobile"><a href="#" class="link"> Início</a></li>
-        <li class="opções-menu-mobile"><a href="#quemsoueu" class="link"> Quem sou eu</a></li>
-        <li class="opções-menu-mobile"><a href="#containerprojetos" class="link"> Projetos</a></li>
+    <ul class="menu-mobile mb-0">
+        <li class="opções-menu-mobile"><a href="#" class="link link text-decoration-none"> Início</a></li>
+        <li class="opções-menu-mobile"><a href="#quemsoueu" class="link link text-decoration-none"> Quem sou eu</a></li>
+        <li class="opções-menu-mobile"><a href="#containerprojetos" class="link link text-decoration-none"> Projetos</a></li>
         <li class="opções-menu-mobile" > <img src="Imagens/telefone.png" alt="" class="celular">
-            <a href="https://contate.me/jonatadesenvolvedorweb" class="link" target="_blank" id="fale-comigo-mobile"> Fale comigo</a></li>
+            <a href="https://contate.me/jonatadesenvolvedorweb" class="link link text-decoration-none" target="_blank" id="fale-comigo-mobile"> Fale comigo</a></li>
     </ul>
     <div class="apresentação">
      
@@ -41,7 +42,7 @@
          <div class="container-apresentação">
              <p id="p1">Olá, sejam bem - vindos</p> 
              <p id="p2">Eu Sou Jonata</p>
-             <p id="p3">Supervisor de inteligência de dados - Customer Experience e Desenvolvedor Front-End</p>
+             <p id="p3">Supervisor de Inteligência de dados CX e Desenvolvedor Front-End</p>
              <div class="redessociais">
                 <a href="https://www.linkedin.com/in/jonata-rossanttles-5a9101148/"  target="_blank" class="botãolink"> <button class="botãoredes">Linkedin</button></a>
                 <a href="https://github.com/JonataRossanttles" target="_blank" class="botãolink"> <button class="botãoredes">Github</button></a>
@@ -54,25 +55,25 @@
    
 </main>
 <section id="quemsoueu">
-    <div class="titulo-quem-sou">UM POUCO SOBRE MIM</div>
+    <h2 class="titulo-quem-sou">UM POUCO SOBRE MIM</h2>
 <div class="container-cards">
-    <div class="card">
+    <div class="carde">
         <h2 class="titulo-card1">Competências Técnicas</h2>
         <div class="container-card">
             <ul class="lista-card">
              <li class="item-lista-card">Html</li>
              <li class="item-lista-card">CSS</li>
              <li class="item-lista-card">Javascript</li>
-             <li class="item-lista-card">Vba</li>
-             <li class="item-lista-card">Excel Avançado</li>
-             <li class="item-lista-card">Power Query</li>
+             <li class="item-lista-card">Bootstrap</li>
+             <li class="item-lista-card"> Excel Avançado</li>
+             <li class="item-lista-card">VBA Avançado</li>
             </ul> 
         </div>
      
     </div>
 
 
-    <div class="card">
+    <div class="carde" >
         <h2 class="titulo-card1">Habilidades</h2>
         <div class="container-card">
             <ul class="lista-card">
@@ -87,24 +88,26 @@
      
     </div>
 
-    <div class="card">
-        <h2 class="titulo-card1">Experiência</h2>
+    <div class="carde" >
+        <h2 class="titulo-card1">Objetivo</h2>
         <div class="container-card">
             
             <ul class="lista-card">
-             <li class="item-lista-card">Em busca da minha primeira Oportunidade</li>
-          
+             <li class="item-lista-card">Ingressar no Universo do Desenvolvimento Front-end.</li>
             </ul> 
         </div>
      
     </div>
 </div>
-
-    <div class="toque-saiba-mais">Saiba mais...</div>
-    
-   
     
 </section>
+
+<div id="container-saiba-mais" >
+    <img src="Imagens/right-arrow.png" id="seta-esquerda" alt="" >
+    <h2 class="toque-saiba-mais"> Saiba mais...</h2>
+    <img src="Imagens/right-arrow.png" id="seta-direita" alt="" style= "transform: rotate(180deg)">
+</div>
+
 <section class="section2">
     <div class="fechar">X</div>
     <div class="soueu">
@@ -114,8 +117,9 @@
         
         <div class="descrição">
             <h1 class="h1desc">Quem sou eu?</h1>
-            <p class="pdesc">Meu nome é Jonata Rossanttles sou formado em Engenharia Civil, atualmente 
-                atuo na análise de dados do setor comercial do  <strong>Grupo ser educacional</strong>, sou muito feliz com o que faço, porém estou disposto a ingressar no mundo do desenvolvimento Front - end, 
+            <p class="pdesc">Meu nome é Jonata Rossanttles sou formado em Engenharia Civil, atualmente atuo como gestor
+                de dados em uma célula de inteligência de dados e métrica Customer Experience na empresa
+                  <strong>Grupo ser educacional</strong>, sou muito feliz com o que faço, porém estou disposto a ingressar no mundo do desenvolvimento Front - end, 
                 pois sou movido a desafios e acredito que esse novo mundo será mais um grande passo na minha carreira.
             </p>
         </div>
@@ -127,51 +131,56 @@
     <h1 class="titulo-container">Projetos</h1>
 
 
-   
-    <div class="slider">
-        <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1" >
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-
-            <div class="slide-one">                
-                <a href="https://jonatarossanttles.github.io/e-commerce/" target="_blank"> <img src="Imagens/e-commerce preview.jpg" alt=""></a>
+    <div  id="slide" style="width:100%;">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+            <div class="carousel-inner" >
+              <div class="carousel-item active">
+                <a href="https://jonatarossanttles.github.io/e-commerce/" target="_blank">
+                    <img src="Imagens/e-commerce preview.jpg" class="d-block w-100" alt="...">
+                </a>
+               
+              </div>
+              <div class="carousel-item">
+                <a href="https://jonatarossanttles.github.io/Space-Tourism/" target="_blank">
+                    <img src="Imagens/preview Space Tourism.jpg" class="d-block w-100" alt="..." >
+                </a>
+                
+              </div>
+              <div class="carousel-item">
+                <a href="https://jonatarossanttles.github.io/Loopstudios/" target="_blank" >
+                    <img src="Imagens/Loopstudios-preview.jpg" class="d-block w-100" alt="...">
+                </a>
+                
+              </div>
+              <div class="carousel-item">
+                <a href="https://jonatarossanttles.github.io/Sunnyside/" target="_blank">
+                    <img src="Imagens/sunnyside preview.jpg" class="d-block w-100" alt="...">
+                </a>
+                
+              </div>
             </div>
-           <div class="slide">
-            <a href="https://jonatarossanttles.github.io/Space-Tourism/" target="_blank"> <img src="Imagens/preview Space Tourism.jpg" alt=""></a>
-           </div>
-           <div class="slide">
-            <a href="https://jonatarossanttles.github.io/Loopstudios/" target="_blank" > <img src="Imagens/Loopstudios-preview.jpg" alt=""></a>
-           </div>
-           <div class="slide">
-            <a href="https://jonatarossanttles.github.io/Sunnyside/" target="_blank"> <img src="Imagens/sunnyside preview.jpg" alt=""></a>
-           </div>
-           <div class="navigation-menu">
-            <div class="auto-btn1" ></div>
-            <div class="auto-btn2" ></div>
-            <div class="auto-btn3" ></div>
-            <div class="auto-btn4" ></div>
-                      
-        </div>
-        </div>
-        <div class="menu-slide">
-            <label for="radio1" class="menu-botão"></label>
-            <label for="radio2" class="menu-botão"></label>
-            <label for="radio3" class="menu-botão"></label>
-            <label for="radio4" class="menu-botão"></label>
-        </div>
-       
-    </div>     
-</div>                
+           <button class="carousel-control-prev" id="botaoantes" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" id="botaodepois" type="button" data-target="#carouselExampleControls" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true" > </span>               
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+
+    </div>
+
+</div>    
+
     <footer>
-        <p>Site Desenvolvido por Jonata Rossanttles</p>
+        <p >Site Desenvolvido por Jonata Rossanttles</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <script>
-
-
-
-
 
 
 /*Efeito Scrool*/
@@ -218,25 +227,26 @@ console.log(letra)
 digitação(apresentaçãoh1,apresentaçãoh2,apresentaçãoh3)
 
 /*Efeito do Carrocel*/
-        let count =1
-document.getElementById("radio1").checked = true 
+//         let count =1
+// document.getElementById("radio1").checked = true 
 
-setInterval( function(){
-next()
-},(3000))
+// setInterval( function(){
+// next()
+// },(3000))
 
-function next(){
-count+=1
-let botao = document.getElementsByClassName("auto-btn"+count)[0]
-if (count>4){
-    count=1
-}
-document.getElementById("radio"+count).checked = true 
+// function next(){
+// count+=1
+// let botao = document.getElementsByClassName("auto-btn"+count)[0]
+// if (count>4){
+//     count=1
+// }
+// document.getElementById("radio"+count).checked = true 
 
-}
-var hamburguer = document.getElementsByClassName("hamburguer")[0]
-hamburguer.addEventListener("click",mostrar)
+// }
+
 /*Menu Mobile*/
+var hamburguer = document.getElementsByClassName("hamburguer")[0]
+ hamburguer.addEventListener("click",mostrar)
 function mostrar(){
     var apresentacao = document.getElementsByClassName("apresentação")[0]
     var menumob = document.getElementsByClassName("menu-mobile")[0]
@@ -261,7 +271,7 @@ let frame = setTimeout(function framevideo(){
 
 
 /*light box*/
-var slider = document.querySelector(".slider")
+var slider = document.querySelector("#slide")
 var toq = document.getElementsByClassName("toque-saiba-mais")[0]
     let btnfechar = document.querySelector(".fechar")
     let lbx = document.querySelector(".section2")
