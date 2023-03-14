@@ -227,12 +227,7 @@ digitação(apresentaçãoh1,apresentaçãoh2,apresentaçãoh3)
 
 $(".hamburguer").click(function(){
     $(".menu-mobile").toggle()
-   var display =  $(".menu-mobile").css("display") 
-        if(display== "block"){
-            $(".hamburguer").addClass("plano-fundo")
-        }else{
-            $(".hamburguer").removeClass("plano-fundo")
-        }
+    $(".hamburguer").toggleClass("plano-fundo")    // Adiciona a classe se não tiver e retira se a classe já estiver no elemento 
 })
 /*Troca do vídeo*/
 var video = document.querySelector(".video")
@@ -248,7 +243,7 @@ let frame = setTimeout(function framevideo(){
 // .fechar = ao x, que fecha a Light box
 
 $(".toque-saiba-mais").click(function abrir(){
-    $(".section2").css("display","block")
+    $(".section2").css("display","block") // Acessa o atributo Css e o modifica
     $("#slide").css("display", "none")
 })
 
