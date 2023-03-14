@@ -193,7 +193,6 @@ let apresentaçãoh1 = document.querySelector("#p1")
 let apresentaçãoh2 = document.querySelector("#p2") 
 let apresentaçãoh3 = document.querySelector("#p3") 
 
-
 function digitação(elemento1,elemento2,elemento3){
     const textoh1 = elemento1.innerHTML.split('')
     const textoh2 = elemento2.innerHTML.split('')
@@ -219,30 +218,23 @@ setTimeout(()=>{
 console.log(letra + i)
 })
 
-
 }
 
 digitação(apresentaçãoh1,apresentaçãoh2,apresentaçãoh3)
 
 
-/*Menu Mobile*/
-var hamburguer = document.getElementsByClassName("hamburguer")[0]
- hamburguer.addEventListener("click",mostrar)
-function mostrar(){
-    var apresentacao = document.getElementsByClassName("apresentação")[0]
-    var menumob = document.getElementsByClassName("menu-mobile")[0]
-    var fotojonata = document.getElementsByClassName("foto-jonata")[0]
+// /*Menu Mobile com Jquery*/
 
-    if(hamburguer.classList.contains("plano-fundo")){
-        hamburguer.classList.remove("plano-fundo")
-        menumob.classList.remove("show-mobile")
-
-    }else{
-        hamburguer.classList.add("plano-fundo")
-        menumob.classList.add("show-mobile")
-    }
-}
-/*troca do vídeo*/
+$(".hamburguer").click(function(){
+    $(".menu-mobile").toggle()
+   var display =  $(".menu-mobile").css("display") 
+        if(display== "block"){
+            $(".hamburguer").addClass("plano-fundo")
+        }else{
+            $(".hamburguer").removeClass("plano-fundo")
+        }
+})
+/*Troca do vídeo*/
 var video = document.querySelector(".video")
 var video2 = document.querySelector("#video2")
 let frame = setTimeout(function framevideo(){
@@ -251,26 +243,19 @@ let frame = setTimeout(function framevideo(){
 }, 5998);
 
 
-/*light box*/
-var slider = document.querySelector("#slide")
-var toq = document.getElementsByClassName("toque-saiba-mais")[0]
-    let btnfechar = document.querySelector(".fechar")
-    let lbx = document.querySelector(".section2")
+/*Light box com Jquery*/
+// .section2 = Lightbox
+// .fechar = ao x, que fecha a Light box
 
+$(".toque-saiba-mais").click(function abrir(){
+    $(".section2").css("display","block")
+    $("#slide").css("display", "none")
+})
 
-
-    toq.addEventListener("click",bt)
-    btnfechar.addEventListener("click",fechar)
- 
-  function bt(){
-    lbx.style.display = "block"
-    slider.style.display="none"
-  }
-  function fechar(){
-    lbx.style.display = "none"
-    slider.style.display="block"
-  }
-
+$(".fechar").click(function fechar(){
+    $(".section2").css("display","none")
+    $("#slide").css("display", "block")
+})
 
     </script>
     <script>
