@@ -206,6 +206,16 @@ main #p3{
         }
     }
 
+    @keyframes flutuar{
+        0%,100%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-7%)
+        }
+    }
+    
+
 .apresentação{
    align-self: center;
    display: block;
@@ -383,8 +393,9 @@ transition: 0.2s;
     cursor: pointer;
     color: #00357ff9;
     padding: 20px;
+  
 }
-#seta-esquerda, #seta-direita{
+#seta-esquerda,#seta-direita {
     animation: piscar 1s infinite;
     height: 80px;
     width: 80px;
