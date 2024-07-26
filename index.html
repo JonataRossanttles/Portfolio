@@ -15,34 +15,35 @@
    
     
    
-<main>
+<header>
     <nav class="menu-desktop">
-        <a href="#" class="Logo"> J.R </a>
+        <a href="#" class="Logo" > J.R </a>
         <ul class="menu">
-            <li class="opções-menu"><a href="#" class="link text-decoration-none"> Início</a></li>
-            <li class="opções-menu"><a href="#quemsoueu" class="link text-decoration-none"> Quem sou eu</a></li>
-            <li class="opções-menu"><a href="#containerprojetos" class="link text-decoration-none"> Projetos</a></li>
+            <li class="opções-menu"  ><a href="#" class="link text-decoration-none"  > Início</a></li>
+            <li class="opções-menu"><a href="#quemsoueu" class="link text-decoration-none" onclick="fechar()"> Quem sou eu</a></li>
+            <li class="opções-menu"><a href="#containerprojetos" class="link text-decoration-none" onclick="fechar()"> Projetos</a></li>
             <li class="opções-menu" id="fale-comigo"> <img src="Imagens/telefone.png" alt="" class="celular1">
-                <a href="https://contate.me/jonatadesenvolvedorweb" class="link text-decoration-none" target="_blank"> Fale comigo</a></li>
+                <a href="https://contate.me/jonatadesenvolvedorweb" class="link text-decoration-none" target="_blank" onclick="fechar()"> Fale comigo</a></li>
         </ul>
-           <a href="#" class="hamburguer"></a> 
+           <a class="hamburguer"></a> 
             
-    </nav>
+    
     <ul class="menu-mobile mb-0">
-        <li class="opções-menu-mobile"><a href="#" class="link link text-decoration-none"> Início</a></li>
-        <li class="opções-menu-mobile"><a href="#quemsoueu" class="link link text-decoration-none"> Quem sou eu</a></li>
-        <li class="opções-menu-mobile"><a href="#containerprojetos" class="link link text-decoration-none"> Projetos</a></li>
+        <li class="opções-menu-mobile"><a href="#" class="link link text-decoration-none" onclick="fechar()"> Início</a></li>
+        <li class="opções-menu-mobile"><a href="#quemsoueu" class="link link text-decoration-none" onclick="fechar()"> Quem sou eu</a></li>
+        <li class="opções-menu-mobile"><a href="#containerprojetos" class="link link text-decoration-none" onclick="fechar()"> Projetos</a></li>
         <li class="opções-menu-mobile" > <img src="Imagens/telefone.png" alt="" class="celular">
-            <a href="https://contate.me/jonatadesenvolvedorweb" class="link link text-decoration-none" target="_blank" id="fale-comigo-mobile"> Fale comigo</a></li>
+            <a href="https://contate.me/jonatadesenvolvedorweb" class="link link text-decoration-none" target="_blank" id="fale-comigo-mobile" onclick="fechar()"> Fale comigo</a></li>
     </ul>
-    <div class="apresentação">
+</nav>
+    <div class="apresentação" >
      
         <video src="Imagens/Intro Plink.webm" autoplay loop muted playsinline class="video" id="video1"></video>
         <video src="Imagens/loop Plink.mp4" autoplay loop muted playsinline class="video" id="video2"></video>
          <div class="container-apresentação">
              <p id="p1">Olá, sejam bem - vindos</p> 
              <p id="p2">Eu Sou Jonata</p>
-             <p id="p3">Supervisor de Inteligência de dados CX e Desenvolvedor Front-End</p>
+             <p id="p3">Desenvolvedor Front-End</p>
              <div class="redessociais">
                 <a href="https://www.linkedin.com/in/jonata-rossanttles-5a9101148/"  target="_blank" class="botãolink"> <button class="botãoredes">Linkedin</button></a>
                 <a href="https://github.com/JonataRossanttles" target="_blank" class="botãolink"> <button class="botãoredes">Github</button></a>
@@ -50,28 +51,15 @@
          </div>  
     </div>
    
-</main>
+</header>
 <!-- Cards -->
 <section id="quemsoueu">
-    <h2 class="titulo-quem-sou">UM POUCO SOBRE MIM</h2>
+    <h2 class="titulo-quem-sou"  >UM POUCO SOBRE MIM</h2>
 <div class="container-cards">
-    <div class="carde">
-        <h2 class="titulo-card1">Competências Técnicas</h2>
-        <div class="container-card">
-            <ul class="lista-card">
-             <li class="item-lista-card">Html</li>
-             <li class="item-lista-card">CSS</li>
-             <li class="item-lista-card">Javascript</li>
-             <li class="item-lista-card">Bootstrap</li>
-             <li class="item-lista-card"> Excel Avançado</li>
-             <li class="item-lista-card">VBA Avançado</li>
-            </ul> 
-        </div>
-     
-    </div>
+    
 
-    <div class="carde" >
-        <h2 class="titulo-card1">Habilidades</h2>
+    <div class="carde" id="card1" >
+        <h2 class="titulo-card1" >Habilidades</h2>
         <div class="container-card">
             <ul class="lista-card">
              <li class="item-lista-card">Criatividade</li>
@@ -84,8 +72,21 @@
         </div>
      
     </div>
+    <div class="carde" id="card2" >
+        <h2 class="titulo-card1">Competências Técnicas</h2>
+        <div class="container-card">
+            <ul class="lista-card">
+             <li class="item-lista-card">Html</li>
+             <li class="item-lista-card">CSS</li>
+             <li class="item-lista-card">Javascript</li>
+             <li class="item-lista-card"> Reacj.js</li>
+             <li class="item-lista-card">Node.js</li>
+            </ul> 
+        </div>
+     
+    </div>
 
-    <div class="carde" >
+    <div class="carde" id="card3">
         <h2 class="titulo-card1">Objetivo</h2>
         <div class="container-card">
             
@@ -103,12 +104,12 @@
 
 <div id="container-saiba-mais" >
     <img src="Imagens/right-arrow.png" id="seta-esquerda" alt="" >
-    <h2 class="toque-saiba-mais"> Saiba mais...</h2>
+    <h2 class="toque-saiba-mais" id="saibamais"> Saiba mais...</h2>
     <img src="Imagens/right-arrow.png" id="seta-direita" alt="" style=" transform: rotate(180deg);" >
 </div>
 <!-- Modal -->
-<section class="section2">
-    <div class="fechar">X</div>
+<section class="section2" id="section2">
+    <div class="fechar" id="fechar">X</div>
     <div class="soueu">
         <div class="img2">
             <img src="Imagens/jonata-formatura.png" alt="" class="imagem2"> 
@@ -116,10 +117,9 @@
         
         <div class="descrição">
             <h1 class="h1desc">Quem sou eu?</h1>
-            <p class="pdesc">Meu nome é Jonata Rossanttles sou formado em Engenharia Civil, atualmente atuo como gestor
-                em uma célula de inteligência de dados e métricas Customer Experience na empresa
-                  <strong>Grupo ser educacional</strong>, sou muito feliz com o que faço, porém estou disposto a aprofundar meus conhecimentos no mundo do desenvolvimento Front - end, 
-                pois sou movido a desafios e acredito que esse novo mundo trará experiências incríveis na minha jornada.
+            <p class="pdesc">Meu nome é Jonata Rossanttles sou formado em Engenharia Civil, sou graduando em Análise e desenvolvimento de sistemas, atualmente atuo como gestor
+                em uma célula de inteligência de dados e métricas na empresa
+                  <strong>Grupo ser educacional</strong>, porém já desenvolvo projetos pessoais como Front - end utilizando React.js e Node.js.
             </p>
         </div>
             
@@ -183,11 +183,20 @@
 
 /*Efeito Scrool*/
 window.sr = ScrollReveal({reset:true})
-sr.reveal('main',{ rotate:{ x:0, y:100, z:0}, duration:500})
-sr.reveal('.container-cards',{ rotate:{ x:0, y:100, z:0}, duration:1000})
-sr.reveal('.slider',{ rotate:{ x:50, y:50, z:0}, duration:800})
+sr.reveal('main',{ rotate:{ y:100}, duration:500})
+sr.reveal('.container-cards',{ rotate:{ y:100 }, duration:1000})
+sr.reveal('.slider',{ rotate:{  y:50}, duration:800})
 
+const header = document.getElementsByClassName('menu-desktop')
+const menumob = document.getElementsByClassName('menu-mobile')
+const hamburguer = document.getElementsByClassName('hamburguer')
+const saibamais = document.getElementById('saibamais')
+const section2 = document.getElementById('section2')
+const slide = document.getElementById('slide')
+const fecharmodal = document.getElementById('fechar')
+const classe = hamburguer[0].classList
 
+console.log(header)
 /*Efeito de Digitação*/
 let apresentaçãoh1 = document.querySelector("#p1") 
 let apresentaçãoh2 = document.querySelector("#p2") 
@@ -207,7 +216,7 @@ setTimeout(()=>{
     elemento2.innerHTML += letra
 },75*i)
 
-console.log(letra)
+
 })
 textoh3.forEach(function(letra,i){
 
@@ -215,19 +224,43 @@ setTimeout(()=>{
     elemento3.innerHTML += letra
 },80*i)
 
-console.log(letra + i)
+
 })
 
 }
 
 digitação(apresentaçãoh1,apresentaçãoh2,apresentaçãoh3)
 
+window.addEventListener('scroll',()=>{
+    var alturatela = window.scrollY
+    if(alturatela >10  && classe.value == 'hamburguer'){
+        header[0].style.backgroundColor = "rgba(0, 0, 0, 0.199)"
+    }else if(alturatela > 10 && classe.value == 'hamburguer plano-fundo' || (alturatela < 10 && classe.value == 'hamburguer plano-fundo') ){
+        header[0].style.backgroundColor = "rgba(0, 0, 0, 0.377)"
+    }else{
+        header[0].style.backgroundColor = "transparent"
+    }
+})
+ 
+// Ao clicar no Hamburguer mostra o menu-mobile ou deixa de mostrar
+function fechar(){
+    menumob[0].style.display = 'none'
+    hamburguer[0].classList.remove('plano-fundo')
+}
 
-// /*Menu Mobile com Jquery*/
+// /*Menu Mobile com Jquery*/ Serve para trocar o ícone de hamburguer para x ou vice-versa
 
 $(".hamburguer").click(function(){
     $(".menu-mobile").toggle()
-    $(".hamburguer").toggleClass("plano-fundo")    // Adiciona a classe se não tiver e retira se a classe já estiver no elemento 
+    $(".hamburguer").toggleClass("plano-fundo")  // Adiciona a classe se não tiver e retira se a classe já estiver no elemento
+    
+    if(classe.value == 'hamburguer plano-fundo'){
+        header[0].style.backgroundColor = "rgba(0, 0, 0, 0.377)"
+        menumob[0].style.backgroundColor = "rgba(0, 0, 0, 0.377)"
+       
+    }else{
+        header[0].style.backgroundColor = "rgba(0, 0, 0, 0.199)"
+    }
 })
 /*Troca do vídeo*/
 var video = document.querySelector(".video")
@@ -239,18 +272,25 @@ let frame = setTimeout(function framevideo(){
 
 
 /*Light box com Jquery*/
-// .section2 = Lightbox
-// .fechar = ao x, que fecha a Light box
 
-$(".toque-saiba-mais").click(function abrir(){
-    $(".section2").css("display","block") // Acessa o atributo Css e o modifica
-    $("#slide").css("display", "none")
-})
 
-$(".fechar").click(function fechar(){
-    $(".section2").css("display","none")
-    $("#slide").css("display", "block")
-})
+
+saibamais.addEventListener('click', 
+   ()=>{
+    section2.style.display = 'block'
+    header[0].style.display = 'none' 
+    slide.style.display = 'none' 
+   } 
+)
+fecharmodal.addEventListener('click', 
+   ()=>{
+    section2.style.display = 'none'
+    header[0].style.display = 'flex' 
+    slide.style.display = 'block' 
+   } 
+)
+
+
 
     </script>
     <script>
